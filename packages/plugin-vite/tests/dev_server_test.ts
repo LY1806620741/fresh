@@ -26,6 +26,13 @@ Deno.test({
     const res = await fetch(`${demoServer.address()}/tests/it_works`);
     const text = await res.text();
     expect(text).toContain("it works");
+
+    // test space
+    const resWithSpace = await fetch(
+      `${demoServer.address()}/test space static/foo with space.txt`,
+    );
+    const textWithSpace = await resWithSpace.text();
+    expect(textWithSpace).toContain("space it works");
   },
   sanitizeResources: false,
   sanitizeOps: false,
@@ -481,6 +488,10 @@ Deno.test({
     const res = await fetch(`${demoServer.address()}/test_static/foo`);
     const text = await res.text();
     expect(text).toContain("<h1>ok</h1>");
+
+    const resWithSpace = await fetch(`${demoServer.address()}/foo with space/`);
+    const textWithSpace = await resWithSpace.text();
+    expect(textWithSpace).toContain("<h1>ok</h1>");
   },
   sanitizeOps: false,
   sanitizeResources: false,
