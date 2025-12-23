@@ -536,7 +536,8 @@ export async function prepareStaticFile(
 > {
   const file = await Deno.open(item.filePath);
   const hash = item.hash ? item.hash : await hashContent(file.readable);
-  const url = new URL(item.pathname, "http://localhost");
+  // fix issues[#3657]: system path conver to uri path, only new URL will conver `test %20encodeUri` to `test%20%20encodeUri`
+  const url = new URL(encodeURI(item.pathname), "http://localhost");
 
   return {
     name: url.pathname,
