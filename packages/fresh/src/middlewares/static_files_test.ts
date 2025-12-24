@@ -225,9 +225,9 @@ Deno.test("static files - enables caching in production", async () => {
 
 Deno.test("static files - decoded pathname", async () => {
   const buildCache = new MockBuildCache({
-    "C#.svg": { content: "body {}", hash: null },
-    "西安市.png": { content: "body {}", hash: null },
-    "인천.avif": { content: "body {}", hash: null },
+    "C%23.svg": { content: "body {}", hash: null },
+    "%E8%A5%BF%E5%AE%89%E5%B8%82.png": { content: "body {}", hash: null },
+    "%EC%9D%B8%EC%B2%9C.avif": { content: "body {}", hash: null },
   });
   const server = serveMiddleware(
     staticFiles(),
