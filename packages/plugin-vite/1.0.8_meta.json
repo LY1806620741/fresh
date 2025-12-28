@@ -1,0 +1,612 @@
+{
+  "manifest": {
+    "/src/plugins/shims.ts": {
+      "size": 702,
+      "checksum": "sha256-1459e146bf89648935de7d37f487fee6f83baf335f6e6422d813d790b4098d0b"
+    },
+    "/src/plugins/patches.ts": {
+      "size": 1879,
+      "checksum": "sha256-dd94d253dcb7290886d592adbbad6d922d0dbf444ccb6207eeb840e72b8417e7"
+    },
+    "/src/shared.ts": {
+      "size": 296,
+      "checksum": "sha256-7bd2eda0ec34cfb014420a9a4a6ba927b426d0f2df0d9a4b76afbcd0a41ef1bb"
+    },
+    "/src/plugins/build_id.ts": {
+      "size": 1577,
+      "checksum": "sha256-0573fe154d944761c7662ba1bf74a5ba66d83a0cd5d43eaed7865d953c12962d"
+    },
+    "/src/utils.ts": {
+      "size": 2198,
+      "checksum": "sha256-a6134f5981926dce5778193de12531756850f44d5650d88db81bf3284c4d1708"
+    },
+    "/src/plugins/server_entry.ts": {
+      "size": 4512,
+      "checksum": "sha256-db05b0bd99f15bb988c39c435e655aba9af7f1fb097f9a80d1ad129573ae34a6"
+    },
+    "/src/plugins/patches/jsx_comment.ts": {
+      "size": 496,
+      "checksum": "sha256-47f60cea70243aaa813138bcb558e128af6e8272c2bbf468d6e9916716eb2c96"
+    },
+    "/src/plugins/patches/commonjs.ts": {
+      "size": 27999,
+      "checksum": "sha256-5e73b4eff10d20fdc983c2a822b83304bee6719aff0c7d8c32bb62181a2a983b"
+    },
+    "/src/plugins/client_entry.ts": {
+      "size": 1539,
+      "checksum": "sha256-1267b8d5342edbd1d6c06305f30534943757abda30c0de78f7cda1f6b2cc1314"
+    },
+    "/src/plugins/dev_server.ts": {
+      "size": 5981,
+      "checksum": "sha256-c8fb3f32194f54a365c77fe41fe7eb9dfcc5af05a037409bb7707df0b1f34e4d"
+    },
+    "/src/plugins/patches/code_eval.ts": {
+      "size": 6827,
+      "checksum": "sha256-af2d207afe8c0f2281b0a6371f4b6e19dd2096e51808c3122e52b33a9ce7ccef"
+    },
+    "/src/plugins/patches/http_absolute.ts": {
+      "size": 1726,
+      "checksum": "sha256-43ce76f9a51c4650dad954aa1ed35874cb75c31ec5dd49d9a63b50fe4fa45fde"
+    },
+    "/README.md": {
+      "size": 651,
+      "checksum": "sha256-00a630a2a412326d005c437cf91858f3cbebca804a4311167ceaa5231ef79150"
+    },
+    "/src/mod.ts": {
+      "size": 8030,
+      "checksum": "sha256-6ab21242a97f158c15e8613cf80a86f423b05fca31c28b33a8e6cb2cbf542ab9"
+    },
+    "/src/plugins/shims/object.entries/index.ts": {
+      "size": 112,
+      "checksum": "sha256-e98924c1bed7409432f7bb2563f41bfc806c5d76add0cc71f84dd6bb462696df"
+    },
+    "/src/plugins/patches/inline_env_vars.ts": {
+      "size": 2600,
+      "checksum": "sha256-3bf32a26604080ffa54cfd5d5b0f8980f6529c93ce341ef484c2f7eafe673374"
+    },
+    "/src/plugins/patches/remove_polyfills.ts": {
+      "size": 1149,
+      "checksum": "sha256-3f453cdabc7c491212d0b97e4de3ba69a33dc0b89dbb8adefdacf7072a008916"
+    },
+    "/src/plugins/shims/supports-color/index.ts": {
+      "size": 648,
+      "checksum": "sha256-754c60f4a7041fdee142f9be3661c828de67eafce561d404e1fcfb7e20e07ba0"
+    },
+    "/src/client.ts": {
+      "size": 697,
+      "checksum": "sha256-7aafd92c8b3ec4552f224bb73fa63bda8e9c1710c02b5797e3370ac622d4e848"
+    },
+    "/src/plugins/deno.ts": {
+      "size": 9652,
+      "checksum": "sha256-4ad3ffafe4323a2606fc0f38f0c4b0331c650c1675f580f82fc0bb4efde4d8da"
+    },
+    "/src/plugins/server_snapshot.ts": {
+      "size": 16614,
+      "checksum": "sha256-0f0fe09ceb4e99a6b75d6a21b3d45b25dedc4d908301a88bf9f423e70c27acdb"
+    },
+    "/src/plugins/client_snapshot.ts": {
+      "size": 5165,
+      "checksum": "sha256-e9917bce8e280c76741f1cfaa4bd4a81473225297d46535fdbc7ced638a9c14e"
+    },
+    "/deno.json": {
+      "size": 1601,
+      "checksum": "sha256-89981bc3ed406758681472ff931ac41c4f40aa95ffc332621479368f1b60eca5"
+    },
+    "/src/plugins/verify_imports.ts": {
+      "size": 4636,
+      "checksum": "sha256-967e22c46fa338c42f99cf1df7d2247d203fb818e87a9367188e4a090ccc433e"
+    }
+  },
+  "moduleGraph2": {
+    "/src/plugins/patches.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[1, 23], [1, 48]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/commonjs.ts",
+          "specifierRange": [[2, 26], [2, 49]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/jsx_comment.ts",
+          "specifierRange": [[3, 28], [3, 54]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/inline_env_vars.ts",
+          "specifierRange": [[4, 36], [4, 66]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/remove_polyfills.ts",
+          "specifierRange": [[5, 32], [5, 63]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[6, 32], [6, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/code_eval.ts",
+          "specifierRange": [[7, 31], [7, 55]]
+        },
+        {
+          "type": "dynamic",
+          "argument": "npm:@babel/preset-react@^7.27.1",
+          "argumentRange": [[10, 45], [10, 78]]
+        }
+      ]
+    },
+    "/src/plugins/server_snapshot.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[5, 7], [5, 24]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@fresh/core@^2.0.0/internal-dev",
+          "specifierRange": [[16, 7], [16, 44]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[21, 7], [21, 20]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[22, 22], [22, 39]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./build_id.ts",
+          "specifierRange": [[23, 27], [23, 42]]
+        }
+      ]
+    },
+    "/src/plugins/patches/code_eval.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[0, 50], [0, 75]]
+        }
+      ]
+    },
+    "/src/plugins/client_entry.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[1, 59], [1, 72]]
+        }
+      ]
+    },
+    "/src/mod.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./utils.ts",
+          "specifierRange": [[5, 7], [5, 19]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/deno.ts",
+          "specifierRange": [[6, 21], [6, 40]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:@prefresh/vite@^2.4.8",
+          "specifierRange": [[7, 21], [7, 48]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/server_entry.ts",
+          "specifierRange": [[8, 34], [8, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/client_entry.ts",
+          "specifierRange": [[9, 34], [9, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/dev_server.ts",
+          "specifierRange": [[10, 26], [10, 51]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/build_id.ts",
+          "specifierRange": [[11, 30], [11, 53]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/client_snapshot.ts",
+          "specifierRange": [[12, 31], [12, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/server_snapshot.ts",
+          "specifierRange": [[13, 31], [13, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/patches.ts",
+          "specifierRange": [[14, 24], [14, 46]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:process",
+          "specifierRange": [[15, 20], [15, 34]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@fresh/core@^2.2.0/internal-dev",
+          "specifierRange": [[22, 7], [22, 44]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./plugins/verify_imports.ts",
+          "specifierRange": [[23, 29], [23, 58]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:module",
+          "specifierRange": [[24, 26], [24, 39]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/dotenv@^0.225.5",
+          "specifierRange": [[25, 35], [25, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:path",
+          "specifierRange": [[26, 17], [26, 28]]
+        },
+        {
+          "type": "static",
+          "kind": "exportType",
+          "specifier": "./plugins/verify_imports.ts",
+          "specifierRange": [[32, 7], [32, 36]]
+        }
+      ]
+    },
+    "/src/plugins/client_snapshot.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 43], [0, 60]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[1, 59], [1, 72]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@fresh/core@^2.0.0/internal-dev",
+          "specifierRange": [[2, 40], [2, 77]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[3, 22], [3, 39]]
+        }
+      ]
+    },
+    "/src/shared.ts": {},
+    "/src/plugins/patches/inline_env_vars.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[0, 48], [0, 73]]
+        }
+      ]
+    },
+    "/src/plugins/deno.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@deno/loader@^0.3.2",
+          "specifierRange": [[7, 7], [7, 32]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[8, 22], [8, 39]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[9, 23], [9, 48]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./patches/http_absolute.ts",
+          "specifierRange": [[10, 29], [10, 57]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[11, 32], [11, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:module",
+          "specifierRange": [[12, 31], [12, 44]]
+        },
+        {
+          "type": "dynamic",
+          "argument": "npm:@babel/preset-react@^7.27.1",
+          "argumentRange": [[15, 45], [15, 78]]
+        }
+      ]
+    },
+    "/src/plugins/dev_server.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 44], [0, 61]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[1, 22], [1, 39]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@fresh/core@^2.0.0/internal",
+          "specifierRange": [[2, 37], [2, 70]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "npm:@mjackson/node-fetch-server@^0.7.0",
+          "specifierRange": [[3, 44], [3, 84]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../shared.ts",
+          "specifierRange": [[4, 25], [4, 39]]
+        }
+      ]
+    },
+    "/src/plugins/patches/jsx_comment.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[0, 38], [0, 63]]
+        }
+      ]
+    },
+    "/src/plugins/build_id.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        }
+      ]
+    },
+    "/src/client.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[10, 35], [10, 52]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "./shared.ts",
+          "specifierRange": [[11, 25], [11, 38]]
+        }
+      ]
+    },
+    "/src/plugins/patches/http_absolute.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[6, 7], [6, 32]]
+        }
+      ]
+    },
+    "/src/plugins/patches/commonjs.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[0, 48], [0, 73]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:module",
+          "specifierRange": [[1, 31], [1, 44]]
+        }
+      ]
+    },
+    "/src/plugins/server_entry.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 38], [0, 55]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@fresh/core@^2.0.0/internal-dev",
+          "specifierRange": [[6, 7], [6, 44]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[7, 59], [7, 72]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[8, 22], [8, 39]]
+        }
+      ]
+    },
+    "/src/utils.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:@std/path@1",
+          "specifierRange": [[0, 22], [0, 39]]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "jsr:@fresh/core@^2.0.0/internal-dev",
+          "specifierRange": [[1, 51], [1, 88]]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "./plugins/verify_imports.ts",
+          "specifierRange": [[2, 33], [2, 62]]
+        }
+      ]
+    },
+    "/src/plugins/verify_imports.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:vite@^7.1.4",
+          "specifierRange": [[0, 28], [0, 45]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "jsr:/@std/fmt@^1.0.7/colors",
+          "specifierRange": [[1, 20], [1, 49]]
+        },
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:rollup@^4.50.0",
+          "specifierRange": [[2, 35], [2, 55]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "node:path",
+          "specifierRange": [[3, 17], [3, 28]]
+        },
+        {
+          "type": "static",
+          "kind": "import",
+          "specifier": "../utils.ts",
+          "specifierRange": [[4, 29], [4, 42]]
+        }
+      ]
+    },
+    "/src/plugins/patches/remove_polyfills.ts": {
+      "dependencies": [
+        {
+          "type": "static",
+          "kind": "importType",
+          "specifier": "npm:@babel/core@^7.28.0",
+          "specifierRange": [[0, 38], [0, 63]]
+        }
+      ]
+    }
+  },
+  "exports": { ".": "./src/mod.ts", "./client": "./src/client.ts" }
+}
